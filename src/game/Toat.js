@@ -12,7 +12,7 @@ import LazyLoad from 'react-lazyload';
 export default function Toat() {
   const [userIndex, setUserIndex] = useState(0);
   const userdeatils = async () => {
-    const response1 = await fetch("http://bkvct-env.eba-mjuzg3tc.ap-south-1.elasticbeanstalk.com/user/getuser", {
+    const response1 = await fetch("https://rv61ezzybe.execute-api.ap-south-1.amazonaws.com/user/getuser", {
       method: "GET",
       headers: {
         "authToken": localStorage.getItem("usertoken")
@@ -34,7 +34,7 @@ export default function Toat() {
   // -************************
 
   const UserRiddleupdatecount = async (score) => {
-    const response = await fetch("http://bkvct-env.eba-mjuzg3tc.ap-south-1.elasticbeanstalk.com/user/updatecount", {
+    const response = await fetch("https://rv61ezzybe.execute-api.ap-south-1.amazonaws.com/user/updatecount", {
       method: "PUT",
       headers: {
         "authToken": localStorage.getItem("usertoken"),

@@ -6,7 +6,7 @@ import './User.css'
 export default function User() {
   const [username, setusername] = useState("");
   const userdeatils = async () => {
-    const response = await fetch("http://bkvct-env.eba-mjuzg3tc.ap-south-1.elasticbeanstalk.com/user/getuser", {
+    const response = await fetch("https://rv61ezzybe.execute-api.ap-south-1.amazonaws.com/user/getuser", {
       method: "GET",
       headers: {
         "authToken": localStorage.getItem("usertoken")

@@ -17,7 +17,7 @@ export default function Map() {
 
     const [userIndex, setUserIndex] = useState(0);
     const userdeatils = async () => {
-        const response1 = await fetch("http://bkvct-env.eba-mjuzg3tc.ap-south-1.elasticbeanstalk.com/user/getuser", {
+        const response1 = await fetch("https://rv61ezzybe.execute-api.ap-south-1.amazonaws.com/user/getuser", {
             method: "GET",
             headers: {
                 "authToken": localStorage.getItem("usertoken")
@@ -39,7 +39,7 @@ export default function Map() {
     const navigate = useNavigate();
     const [riddles, setRiddles] = useState(" ");
     const riddledeatils = async () => {
-        const response = await fetch("http://bkvct-env.eba-mjuzg3tc.ap-south-1.elasticbeanstalk.com/riddle/getriddle2", {
+        const response = await fetch("https://rv61ezzybe.execute-api.ap-south-1.amazonaws.com/riddle/getriddle2", {
             method: "GET",
             headers: {
                 "riddleIndex": userIndex,
