@@ -22,7 +22,7 @@ export default function RegisterForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://bkvct-env.eba-mjuzg3tc.ap-south-1.elasticbeanstalk.com/user/createuser", {
+    const response = await fetch("https://rv61ezzybe.execute-api.ap-south-1.amazonaws.com/user/createuser", {
       method: 'POST',
       headers: {
         "Content-Type": "application/json",

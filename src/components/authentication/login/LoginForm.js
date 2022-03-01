@@ -32,7 +32,7 @@ export default function LoginForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://bkvct-env.eba-mjuzg3tc.ap-south-1.elasticbeanstalk.com/user/loginuser", {
+    const response = await fetch("https://rv61ezzybe.execute-api.ap-south-1.amazonaws.com/user/loginuser", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
